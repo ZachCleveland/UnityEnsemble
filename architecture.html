@@ -1,9 +1,40 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Architecture</title>
-    </head>
-    <body>
-        <p>This is where the architecture will go.</p>
-    </body>
-</html>
+---
+layout: "default"
+title: Project Sea Phlatt
+---
+<h2>Unity Ensemble</h2>
+
+<h2>Members: </h2>
+<p>Zachariah Cleveland, Bryant Hernandez, Gabriel Mauger, Kailey Torma, Julian Vivar</p>
+<p></p>
+<h2>Project Overview</h2>
+<p>Top-down 2D game with 5 levels that begins with absolute silence and incrementally builds the theme song.</p>
+<p>Each level requires solving different puzzles (box-pushing, memory, etc.) to receive access to an instrument.</p>
+<p>Once the instrument is acquired, its musical component of the piece is added to the OST.</p>
+<p>- Upon finishing all of the levels, all instruments serenade the user. Final ending of the game is still in planning stages.</p>
+<p></p>
+<p><h2>Key Architectural Drivers</h2>
+<p>Because we are developing a puzzle game that has multiple levels, the ability to edit the puzzles is a high requirement, so that we can adjust difficulty and test for softlocks, etc.</p>
+<p>We also need to easily distinguish between the different aspects of the game (UI, sound, coding, etc.) so we can easily tie them together.</p>
+<p>Knowledge source and control components may produce new data objects that are added to the blackboard which is essential as player progresses the game and sequentially the OST</p>
+<p></p>
+<p><h2>Architectural Style Choices</h2>
+<p>Blackboard</p>
+<p>- Good for reusability</p>
+<p>- Easy to update and modify</p>
+<p>- Allows multiple processes to work closer together on separate threads</p>
+<p>- Instantiatable as individual processes used in layer architecture.</p>
+<p></p>
+<p>Layered</p>
+<p>- Simplicity of implementation</p>
+<p>- Code organization is consistent</p>
+<p>- Enables the team to work on different parts of the application with minimal dependencies</p>
+<p></p>
+<h2>Our Architecture</h2>
+###INPUT PICTURE HERE YA DUMBBUTT
+<p></p>
+<h2>Conclusion</h2>
+<p>Architecture chosen: Blackboard</p>
+<p>- Reasons: For each level, we can easily keep track of the different states of the object inside of said level, such as keeping track of the locations of the boxes, whether or not an object has been acquired, or what instruments are playing at the time.</p>
+<p>- Risks: possible problems in synchronization of multiple agents, high dependency on the knowledge source.</p>
+<p>Our questions: Do we need individual blackboards or just one? Is there a more efficient way of storing this information?</p>
