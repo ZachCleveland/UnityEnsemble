@@ -1,9 +1,31 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Design</title>
-    </head>
-    <body>
-        <p>This is where the design will go.</p>
-    </body>
-</html>
+---
+layout: "default"
+title: Design Documentation
+---
+<h2>Our Architecture</h2>
+
+<img src="/UnityEnsemble/unknown.png" alt="Domain Model" width="400" height="320">
+
+<p>User uses the Keyboard input to control the main character sprite, who will then interact with different objects; these objects could be pushable/pullable boxes, sheet music, or instruments. Most of these objects will only be accessible once the user manipulates different objects in certain ways; for example, moving the boxes will allow the user to pick up the sheet music objects, which in turn will unlock the ability to manipulate the OST via instruments.</p>
+
+
+<h2>Major classes</h2>
+<p>Player</p>
+<p> - Be able to move in all directions (playerMovement script)</p>
+<p> - Be able to interact with objects (clicking and pressing keys)</p>
+<p> - Is it a singleton class? Yes.</p>
+<p>Interactable objects:</p>
+<p> - Bottles - playable, each bottle will play a unique pitch</p>
+<p> - Slot machines - clickable, use RNG to determine if win or loss</p>
+<p> - Trap doors - allow player to move between rooms, these are the triggers for scene transitions</p>
+<p> - Instruments - playable, will allow the player to make their soundtrack</p>
+<p> - Boxes - can be pushed or pulled by the player. Putting boxes in the correct location triggers pressure plates.</p>
+<p> - Pressure plates - unlocks the next level</p>
+<p> - Is it a singleton class? No.</p>
+<p>Maps</p>
+<p> - Boundaries - prevents the player from leaving the map</p>
+<p> - Camera - follows the character as it moves along the map</p>
+<p> - Is it a singleton class? No.</p>
+
+<h2>Control issues:</h2>
+<p>Minor Issue: Level loading imports the Regular Expressions class from Microsoft’s .NET framework. Would need to have the framework installed alongside the game for new users.</p>
