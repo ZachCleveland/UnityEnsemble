@@ -6,42 +6,42 @@ title: Test Report
 <h3>Object Interaction</h3>
 <p></p>
 <p> - Box pushing scripts</p>
-<p>   - First created raycast then read input. After getting the pushing script to work from one direction, we worked on moving the raycast around the player. The testing done was the player interacting with objects in the game and learning how to grab them. </p>
+<p> - - First created raycast then read input. After getting the pushing script to work from one direction, we worked on moving the raycast around the player. The testing done was the player interacting with objects in the game and learning how to grab them. </p>
 <p> - Clickable slot machines</p>
-<p>   - Initially tested that slot machines were clickable by running destroyGameObject so the object would disappear when clicked in the game to show that the click was registered.</p>
+<p> - - Initially tested that slot machines were clickable by running destroyGameObject so the object would disappear when clicked in the game to show that the click was registered.</p>
 <p>Level Loading</p>
 <p> - Text to level</p>
-<p>   - Tested text to level scripts by using different text files and prefabs to make a variety of different maps. Same scripts were used to load objects into the game.</p>
+<p> - - Tested text to level scripts by using different text files and prefabs to make a variety of different maps. Same scripts were used to load objects into the game.</p>
 <p> - Transitions between levels</p>
-<p>   - Implemented using SceneManagement library from Unity assets with physical 2D body triggers in the levels to load the next scene once puzzle criteria has been met. </p>
-<p>   - Tested by interacting with triggers such as trapdoors and button prompts to see if the transition between levels would happen.</p>
+<p> - - Implemented using SceneManagement library from Unity assets with physical 2D body triggers in the levels to load the next scene once puzzle criteria has been met. </p>
+<p> - - Tested by interacting with triggers such as trapdoors and button prompts to see if the transition between levels would happen.</p>
 <p>Character Movement</p>
 <p> - 4 way movement</p>
-<p>   - We created a script which would change the characters X and/or Y position after clicking the intended movement keys, either WASD or the directional arrows. Tested by playing the game and seeing our character move across the screen.</p>
+<p> - - We created a script which would change the characters X and/or Y position after clicking the intended movement keys, either WASD or the directional arrows. Tested by playing the game and seeing our character move across the screen.</p>
 <p> - Walking animations</p>
-<p>   - After achieving 4 way movement we created walking animations for all 4 directions and created a blend tree which would utilize these animations to make our character walk. After implementing the blend tree into the walking script we tested by playing the game and seeing our character move across the screen with walking animations.</p>
+<p> - - After achieving 4 way movement we created walking animations for all 4 directions and created a blend tree which would utilize these animations to make our character walk. After implementing the blend tree into the walking script we tested by playing the game and seeing our character move across the screen with walking animations.</p>
 <p>Puzzle Mechanics</p>
 <p> - Pressure plates</p>
-<p>   - Tested pressure plate scripts dragging objects onto pressure plates and making sure variables would increase and decrease correctly when the correct object collided.</p>
+<p> - - Tested pressure plate scripts dragging objects onto pressure plates and making sure variables would increase and decrease correctly when the correct object collided.</p>
 <p> - Slot machines</p>
-<p>   - Tested scripts for special and regular slot machines by using Debug statements sent to the console</p>
+<p> - - Tested scripts for special and regular slot machines by using Debug statements sent to the console</p>
 <p>Sound Effects and Music</p>
 <p> - Sounds would play correctly when expected. Bottles would play the correct sound when you picked them up, and pitches would change correctly. </p>
 <p>User Interface</p>
 <p> - Pause Menu</p>
-<p>   - Built using Unity Canvas objects.</p>
-<p>   - Contains readable options for resuming the game, exiting to the main menu, and quitting the game.</p>
-<p>   - Tested by loading a level multiple times and testing each button option to ensure each function worked properly. Functionality is 70% complete.</p>
+<p> - - Built using Unity Canvas objects.</p>
+<p> - - Contains readable options for resuming the game, exiting to the main menu, and quitting the game.</p>
+<p> - - Tested by loading a level multiple times and testing each button option to ensure each function worked properly. Functionality is 70% complete.</p>
 <p> - Main Menu</p>
-<p>   - Built using Unity Canvas objects in a Unity Scene</p>
-<p>   - Contains readable, clickable options for loading a level, starting a new game, or quitting the game. </p>
-<p>   - Tested by loading the scene and pressing the buttons to ensure each function worked properly. Functionality is 30% complete. </p>
+<p> - - Built using Unity Canvas objects in a Unity Scene</p>
+<p> - - Contains readable, clickable options for loading a level, starting a new game, or quitting the game. </p>
+<p> - - Tested by loading the scene and pressing the buttons to ensure each function worked properly. Functionality is 30% complete. </p>
 <p> - User Prompts</p>
-<p>   - Built using Unity Canvas objects</p>
-<p>   - Contains a readable text block that instructs the user on how to use the controls, when to interact with an object, and slight hints on what to do. </p>
-<p>   - Tested by triggering various flags that would cause a prompt to appear, such as stepping on a trap door or entering a specific area. Functionality is 90% complete, implementation is 10% complete. </p>
+<p> - - Built using Unity Canvas objects</p>
+<p> - - Contains a readable text block that instructs the user on how to use the controls, when to interact with an object, and slight hints on what to do. </p>
+<p> - - Tested by triggering various flags that would cause a prompt to appear, such as stepping on a trap door or entering a specific area. Functionality is 90% complete, implementation is 10% complete. </p>
 <p></p>
-<h2>System Testing:</h2>
+<h3>System Testing:</h3>
 <p>Individual Levels</p>
 <p> - When testing an individual level, we made sure to meet the following criteria: Level Loading, Character Movement, Object Interaction, Puzzle Functionality, and Level Transition. Currently, our testing level has been the Warehouse level.</p>
 <p> - To meet Level Loading, the level’s background art, interactable objects, and player model must all successfully load using the serializing scripts written.</p>
@@ -57,11 +57,11 @@ title: Test Report
 <p> - Sounds: The soundtrack must progressively change with each level, reflecting the instruments the player has collected on their journey. Additionally, each sound effect created for the game must play at the appropriate time, such as footsteps when the player moves, a door hinge when the trap door is opened, etc.</p>
 <p> - End + Credits: At the end of the game, the player should be presented with an acknowledgement of their accomplishment of beating the game. Ideally, we want this to be the full soundtrack heard over an image of the player in a victorious light. Following this acknowledgement, a short list of credits acknowledging the contributors to the project will display on screen, before the user is sent back to the main menu. </p>
 <p></p>
-<h2>Acceptance Testing:</h2>
+<h3>Acceptance Testing:</h3>
 <p>Specific requirements from user stories</p>
 <p> - Tutorial</p>
-<p>   - Implemented a tutorial level that met the user requirements of explaining all of the different game mechanics.</p>
-<p>   - We used the noob user story acceptance criteria to drive this testing as we wanted the tutorial to ensure that even new players understand what to do</p>
+<p> - - Implemented a tutorial level that met the user requirements of explaining all of the different game mechanics.</p>
+<p> - - We used the noob user story acceptance criteria to drive this testing as we wanted the tutorial to ensure that even new players understand what to do</p>
 <p> - Aesthetically pleasing setting and interface</p>
 <p> - Challenging/fun puzzles</p>
 <p> - Development of OST (original soundtrack)</p>
