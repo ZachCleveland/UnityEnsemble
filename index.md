@@ -1,7 +1,7 @@
 # Welcome to Unity Ensemble GitHub Pages
 
 ## Project Sea Phlatt
-Kailey Torma, Julian Vivar, Gabriel Mauger, Zachariah Cleveland, Bryant Hernandez
+#### Kailey Torma, Julian Vivar, Gabriel Mauger, Zachariah Cleveland, Bryant Hernandez
 Project Sea Phlatt is a game with 5 levels that involves solving various puzzles with different types of mechanics.
 
 ## [Problem statement](https://zachcleveland.github.io/UnityEnsemble/problem.html)
